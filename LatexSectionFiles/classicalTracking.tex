@@ -1,0 +1,13 @@
+\newread\file 
+\openin\file={\classicalTracking/files.txt}
+\endlinechar-1
+\loop\unless\ifeof\file
+\read\file to \fileline
+% \myitem \href{run: \fileline}{\fileline}
+\if\relax\fileline\relax\else
+% \item \href{run: \MultiTrackingPath\fileline}{\fileline}
+\IfEndWith{\fileline}{f}{\begin{hangingpar} \textbullet \hspace{0.25cm} \href{run:\classicalTracking\fileline}{\fileline} \\ \end{hangingpar}}{}\noindent\par
+\fi
+\repeat       
+\closein\file    
+\closein\file  

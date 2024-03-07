@@ -1,0 +1,14 @@
+\newread\file 
+    \openin\file={\PedestrianTrackingPath/files.txt}
+    \endlinechar-1
+
+            \loop\unless\ifeof\file
+                \read\file to \fileline
+                % \myitem \href{run: \fileline}{\fileline}
+                    \if\relax\fileline\relax\else
+                        \IfEndWith{\fileline}{f}{\begin{hangingpar} \textbullet \hspace{0.25cm} \href{run:\PedestrianTrackingPath\fileline}{\fileline} \\ \end{hangingpar}}{}\noindent\par
+                    \fi
+            \repeat
+     
+    \closein\file    
+\closein\file  

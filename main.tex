@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{comment}
+
+\usepackage[utf8]{inputenc}
+\usepackage{underscore}
+\usepackage{xstring}
+\usepackage{hang}
+
+% TO ENABLE \WRITE18, MAKE SURE LATEX-WORKSHOP.LATEX.TOOLS HAS FOLLOWING ARGUMENTS
+%       {
+%            "name": "pdflatex",
+%            "command": "pdflatex",
+%            "args": [
+%                "--shell-escape", 
+%                "-synctex=1",
+%                "-interaction=nonstopmode",
+%                "-file-line-error",
+%                "%DOC%"
+%            ],
+%            "env": {}
+%        },
+      
+
+% DEFINE A VARIABLE FOR EACH FOLDER
+
+\newcommand{\MultiTrackingPath}{./Documents/multiTarget_multiCamera_tracking/}
+\newcommand{\PedestrianTrackingPath}{./Documents/pedestrian_tracking/}
+\newcommand{\SegmentationPath}{./Documents/segmentation/}
+\newcommand{\OpticalFlowPath}{./Documents/opticalFlow/}
+\newcommand{\singleCamera}{./Documents/singleCamera_tracking/}
+\newcommand{\classicalTracking}{./Documents/classicalTracking/}
+
+
+\author{Nikhil Sharma}
+\title{Research Documents for the Perception Research Team at BirdsEye}
+
+\begin{document}
+
+   \maketitle
+    \immediate\write18{files.bat}
+
+    \section{MultiSensor Multitarget Video Tracking}
+    \input{LatexSectionFiles/multiCamera_tracking}
+
+    \section{Pedestrian Tracking}
+    \input{LatexSectionFiles/pedestrianTracking}
+
+    \section{Segmentation}
+    \input{LatexSectionFiles/segmentation}
+
+    \section{Optical Flow}
+    \input{LatexSectionFiles/opticalFlow}
+
+    \section{Single Camera}
+    \input{LatexSectionFiles/singleCamera.tex}
+    
+    \section{Classical Tracking Related}
+    \input{LatexSectionFiles/classicalTracking.tex}		
+    
+    % Create more sections when required ...
+    
+\end{document}
+
+
+
+
+
+
+ 
