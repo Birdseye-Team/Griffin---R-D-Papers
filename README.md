@@ -11,5 +11,5 @@ The aim is to automate documentation for reasearch purposes using pdfLatex. The 
 The subfolders are under [Documents](./Documents/) folder, after adding the article into any of the folders, the user has to run [main.tex](./main.tex) latex file to generate the [main.pdf](./main.pdf). The generated PDF file contains links to all the articles arranged in a section wise hierarchy.
 
 ### Adding subfolders
-In case the user wants to create subfolders for a new research topic, he can do so, but must edit [files.bat](./files.bat) and [main.tex](./main.tex) to generate clickable links to the all articles.
+In case the user wants to create subfolders for a new research topic, he can do so, but must edit [files.bat](./files.bat) and [main.tex](./main.tex) to generate clickable links to the articles.
   
