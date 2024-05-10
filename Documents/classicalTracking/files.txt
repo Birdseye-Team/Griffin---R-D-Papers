@@ -1,2 +1,6 @@
 files.txt
+Integrated Tracking Classification and Sensor Management - 2014 - Mallick.pdf
+Introduction_to_PHD_filtering_mathWorks.pdf
+Multitarget_Tracking.pdf
+Simon Haykin - Kalman filtering and neural networks-Wiley-Interscience (2001).pdf
 The Probabilistic Data Association Filter.pdf
